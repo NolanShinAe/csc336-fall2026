@@ -1,0 +1,78 @@
+body {
+    background-color: rgb(168, 168, 200);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.ep {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    border-radius: 25px;
+    background-color: bisque;
+    padding-bottom: 25px;
+}
+
+.gp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    border-radius: 25px;
+    background-color: rgb(146, 211, 158);
+    padding-bottom: 25px;
+}
+
+.sp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    border-radius: 25px;
+    background-color: aliceblue;
+    padding-bottom: 25px;
+}
+
+.k {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    border-radius: 25px;
+    background-color: pink;
+    padding-bottom: 25px;
+}
+
+a img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#topic {
+    text-align: center;
+    border: 3px solid #000;
+    text-shadow: 0 2px 3px rgba(0,0,0,0.9);
+    padding: 10px;
+}
+
+#topic img {
+    vertical-align: middle;
+}
+
+#h1desc {
+    margin: 0;  
+    line-height: 1.5;
+}
+
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0;
+    text-shadow: 0 2px 3px rgba(0,0,0,0.4);
+}
+
+.h2desc {
+    text-align: center;
+    margin-top: 0;
+}
