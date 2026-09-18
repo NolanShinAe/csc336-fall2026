@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>9-15-26 CSS Demos</title>
+        <style>
+            div {
+                background-color: #cccccc;
+            }
+
+            h1 {
+                font-size: 100;
+            }
+
+            div h1{
+                font-size: 10;
+            }
+
+            #flexDiv {
+                display: flex;
+                width: 100%;
+                height: 100px;
+            }
+
+            .flexDemo {
+                align-items: stretch;
+                background-color: pink;
+                padding: 10px;
+                height: 100%;
+                width: 100%;
+                box-shadow: 0 4px 6 px rgba(0,0,0,0.9);
+
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <h1>North Wind</h1>
+        <div id="headerDiv">
+            <h1 id="title">Penguins of Madagascar</h1>
+        </div>
+        <div id="contentDiv">
+            <ul id="penguinNames">
+                <li>Skipper</li>
+                <li>Kowalski</li>
+                <li>Rico</li>
+                <li>Private</li>
+            </ul>
+        </div>
+        <div id="flexDiv">
+            <div class="flexDemo"></div>
+            <div class="flexDemo"></div>
+            <div class="flexDemo"></div>
+        </div>
+    </body>
+</html>
