@@ -131,7 +131,6 @@ function visualizeRoom(room) {
     if (room.name === "Statue Room") {
         passwordInput = document.createElement("input");
         passwordInput.type = "text";
-        passwordInput.addEventListener("mouseover", passwordHint);
         roomRootDiv.append(passwordInput);
 
         passwordButton = document.createElement("button");
