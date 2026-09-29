@@ -100,10 +100,20 @@ function checkPassword(e) {
     }
 }
 
+
 function passwordHint() {
-    let hintParagraph = document.createElement("p");
-    hintParagraph.innerHTML = "Hint: The friends along the way...or not";
-    roomRootDiv.append(hintParagraph);
+   let hintParagraph = document.createElement("p");
+   hintParagraph.id = "passwordHint";
+   hintParagraph.innerHTML = "Hint: The friends along the way...or not";
+   roomRootDiv.append(hintParagraph);
+}
+
+
+function passwordHintRe() {
+    let hintParagraph = roomRootDiv.querySelector("#passwordHint");
+    if (hintParagraph) {
+        hintParagraph.remove();
+    }
 }
 
 
@@ -131,6 +141,8 @@ function visualizeRoom(room) {
     if (room.name === "Statue Room") {
         passwordInput = document.createElement("input");
         passwordInput.type = "text";
+        passwordInput.addEventListener("mouseover", passwordHint);
+        passwordInput.addEventListener("mouseout", passwordHintRe);
         roomRootDiv.append(passwordInput);
 
         passwordButton = document.createElement("button");
