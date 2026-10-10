@@ -26,14 +26,14 @@ let products = [
     {
         name: "XBOX Series X",
         price: 749.99,
-        description: "Microsoft's flagship 9th-generation home video game console.",
+        description: "Microsoft's flagship 9th-generation home video game console. Make the most of every gaming minute with Quick Resume, lightning-fast load times, and gameplay of up to 120 FPS - all powered by XBOX Velocity Architecture.",
         image: "xbox.png",
         category: "console"
     },
     {
         name: "Galaxy Z Flip8",
         price: 1199.99,
-        description: "An Android-based foldable smartphone released by Samsung Electronics.",
+        description: "An Android-based foldable smartphone released by Samsung Electronics. It delivers powerful performance to support the way you express yourself. Powered by Snapdragon® 8 Elite Gen 5 for Galaxy, which brings together a next-gen CPU, GPU and NPU, it handles demanding days without breaking your flow.",
         image: "galaxyzflip8.png",
         category: "phone"
     },
@@ -47,14 +47,14 @@ let products = [
     {
         name: "Pixel Watch 4",
         price: 449.99,
-        description: "A round hybrid smartwatch made by Google that works only with Android phones running Android 11 or newer.",
+        description: "A round hybrid smartwatch made by Google that works only with Android phones running Android 11 or newer. Next-level health and fitness tool on a bigger, stunning display. Pixel Watch 4 uses sleep, resting heart rate, and heart rate variability to show when you're ready for a tough workout or to prioritize recovery.",
         image: "googlepixel.png",
         category: "watch" 
     },
     {
         name: "Moto Watch",
         price: 129.99,
-        description: "A budget-friendly and lifestyle-focused smartwatch made in partnership with Motorola.",
+        description: "A budget-friendly and lifestyle-focused smartwatch made in partnership with Motorola. Track your health confidently with a personal wellness companion. Powered by Polar's cutting-edge technology, our suite of advanced tracking tools deliver accurate, in-depth insights you can rely on, right when you need them.",
         image: "motowatch.png",
         category: "watch"  
     },
