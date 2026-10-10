@@ -1,0 +1,105 @@
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(229, 149, 189);
+}
+
+#root {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    float: left;
+}
+
+#cart {
+    width: 25%;
+    float: right;
+    box-sizing: border-box;
+    padding: 25px;
+    margin-right: 25px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: #f5f5f5;
+    font-size: 14px;
+}
+
+#cart hr {
+    border: none;
+    border-top: 2px solid #ccc;
+    margin-top: 30px;
+}
+
+.product {
+    box-sizing: border-box;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.product img {
+    display: block;
+    width: 65%;
+    height: 300px;
+    object-fit: contain;
+    align-self: center;
+}
+
+.product.selected {
+    border: 2px solid blue;
+    background-color: lightyellow;
+}
+
+h1 {
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.product p {
+    font-size: 15px;
+    line-height: 1.5;
+    height: 125px;
+    overflow-y: auto;
+}
+
+.product button {
+    font-family: inherit;
+    font-size: 12px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #24d3ad;
+    color: white;
+    cursor: pointer;
+}
+
+#dropdown select {
+    font-family: inherit;
+    font-size: 15px;
+    padding: 8px;
+    margin: 0 10px 20px 0;
+}
+
+#selected button {
+    font-family: inherit;
+    font-size: 15px;
+    padding: 10px 25px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
