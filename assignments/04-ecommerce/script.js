@@ -61,7 +61,7 @@ let products = [
     {
         name: "Little Nightmares",
         price: 19.99,
-        description: "Take on the role of Six, a lone child lost in a massive metal vessel known as the Maw, surrounded by dangerous, distorted versions of adults. You’ll need to do your best to escape in one piece or your fate will be worse than you ever dared dream.",
+        description: "Take on the role of Six, a lone child lost in a massive metal vessel known as the Maw, surrounded by dangerous, distorted versions of adults. You'll need to do your best to escape in one piece or your fate will be worse than you ever dared dream.",
         image: "little.png",
         category: "video-game"
     },
