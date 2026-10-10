@@ -40,7 +40,7 @@ let products = [
     {
         name: "iPhone Duo",
         price: 1999.00,
-        description: "Apple's first foldable smartphone.",
+        description: "Apple's first foldable smartphone. The largest iPhone display ever. In a thin, foldable design. Reimagined iOS experiences for ultimate versatility. 48MP Dual Fusion camera system. And all-new ways to shoot from front to back.",
         image: "appleduow.png",
         category: "phone"
     },
