@@ -1,3 +1,5 @@
+//Changing the font for entire chart.
+Chart.defaults.font.family = "fantasy";
 let dropdownDiv = document.querySelector("#dropdown");
 
 //Creating the select element and appending it my dropdown container.
@@ -56,19 +58,24 @@ async function setup() {
             datasets : [{
                 label: "Rotten Tomato Score of Film",
                 data: films.map(film => Number(film.rt_score)),
+                backgroundColor: "#e76f8a",
                 borderWidth: 1
             }]
 
         },
+
         options: {
             //Enabling dynamic window resizing.
             responsive: true,
-            
+        
             //Adding a title to the chart.
             plugins: {
                 title: {
                     display: true,
-                    text: "Rotten Tomatoes Scores of Studio Ghibli Films"
+                    text: "Rotten Tomatoes Scores of Studio Ghibli Films",
+                    font: {
+                        weight: "bold"
+                    }
             }},
 
             //Labeling the y-axis.
@@ -76,13 +83,14 @@ async function setup() {
                 y: {
                     title: {
                         display: true,
-                        text: "Rotten Tomatoes Score (%)"
+                        text: "Rotten Tomatoes Score (%)",
+                        font: {
+                            weight: "bold"
+                        }
                     }
                 }
             }
-        
-        }}
-        );
+        }});
 
 
     //Listening for the when dropdown changes so the chart displays different data.
@@ -90,8 +98,11 @@ async function setup() {
         if (chartSelect.value === "rt_score") {
             ghibliChart.data.datasets[0].label = "Rotten Tomato Score of Film";
             ghibliChart.data.datasets[0].data = films.map(film => Number(film.rt_score));
+            ghibliChart.data.datasets[0].backgroundColor = "#e76f8a";
             ghibliChart.options.plugins.title.text = "Rotten Tomatoes Scores of Studio Ghibli Films";
             ghibliChart.options.scales.y.title.text = "Rotten Tomatoes Score(%)";
+            
+
 
             //Updating the chart so the new data appears.
             ghibliChart.update();
@@ -99,6 +110,7 @@ async function setup() {
         } else if (chartSelect.value === "running_time") {
             ghibliChart.data.datasets[0].label = "Runtime of Film";
             ghibliChart.data.datasets[0].data = films.map(film => Number(film.running_time));
+            ghibliChart.data.datasets[0].backgroundColor = "#75a9a0";
             ghibliChart.options.plugins.title.text = "Runtime of Studio Ghibli Films";
             ghibliChart.options.scales.y.title.text = "Runtime (Minutes)";
 
@@ -108,6 +120,7 @@ async function setup() {
         } else if (chartSelect.value === "people") {
             ghibliChart.data.datasets[0].label = "# of Characters";
             ghibliChart.data.datasets[0].data = films.map(film => film.people.length);
+            ghibliChart.data.datasets[0].backgroundColor = "#e5b65c";
             ghibliChart.options.plugins.title.text = "Number of Characters in Studio Ghibli Films";
             ghibliChart.options.scales.y.title.text = "Number of Characters";
 

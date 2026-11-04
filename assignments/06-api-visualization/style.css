@@ -1,0 +1,18 @@
+body {
+    background-color:blanchedalmond;
+    font-family: fantasy;
+}
+
+h1 {
+    padding-top: 15px;
+    text-align: center;
+}
+
+#dropdown select {
+    font-family: inherit;
+    font-size: 15px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: rgb(170, 211, 233);
+}
+
