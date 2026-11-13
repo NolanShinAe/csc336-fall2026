@@ -20,56 +20,56 @@ let products = [
         name: "PS5",
         price: 599.00,
         description: "A ninth-generation home video game console developed by Sony Interactive Entertainment. An all-digital version of the PS5 console with no disc drive. Download and play digital games from PlayStation Store.",
-        image: "ps5.png",
+        image: "images/ps5.png",
         category: "console"
     },
     {
         name: "XBOX Series X",
         price: 749.99,
         description: "Microsoft's flagship 9th-generation home video game console. Make the most of every gaming minute with Quick Resume, lightning-fast load times, and gameplay of up to 120 FPS - all powered by XBOX Velocity Architecture.",
-        image: "xbox.png",
+        image: "images/xbox.png",
         category: "console"
     },
     {
         name: "Galaxy Z Flip8",
         price: 1199.99,
         description: "An Android-based foldable smartphone released by Samsung Electronics. It delivers powerful performance to support the way you express yourself. Powered by Snapdragon® 8 Elite Gen 5 for Galaxy, which brings together a next-gen CPU, GPU and NPU, it handles demanding days without breaking your flow.",
-        image: "galaxyzflip8.png",
+        image: "images/galaxyzflip8.png",
         category: "phone"
     },
     {
         name: "iPhone Duo",
         price: 1999.00,
         description: "Apple's first foldable smartphone. The largest iPhone display ever. In a thin, foldable design. Reimagined iOS experiences for ultimate versatility. 48MP Dual Fusion camera system. And all-new ways to shoot from front to back.",
-        image: "appleduow.png",
+        image: "images/appleduow.png",
         category: "phone"
     },
     {
         name: "Pixel Watch 4",
         price: 449.99,
         description: "A round hybrid smartwatch made by Google that works only with Android phones running Android 11 or newer. Next-level health and fitness tool on a bigger, stunning display. Pixel Watch 4 uses sleep, resting heart rate, and heart rate variability to show when you're ready for a tough workout or to prioritize recovery.",
-        image: "googlepixel.png",
+        image: "images/googlepixel.png",
         category: "watch" 
     },
     {
         name: "Moto Watch",
         price: 129.99,
         description: "A budget-friendly and lifestyle-focused smartwatch made in partnership with Motorola. Track your health confidently with a personal wellness companion. Powered by Polar's cutting-edge technology, our suite of advanced tracking tools deliver accurate, in-depth insights you can rely on, right when you need them.",
-        image: "motowatch.png",
+        image: "images/motowatch.png",
         category: "watch"  
     },
     {
         name: "Little Nightmares",
         price: 19.99,
         description: "Take on the role of Six, a lone child lost in a massive metal vessel known as the Maw, surrounded by dangerous, distorted versions of adults. You'll need to do your best to escape in one piece or your fate will be worse than you ever dared dream.",
-        image: "little.png",
+        image: "images/little.png",
         category: "video-game"
     },
     {
         name: "HITMAN World of Assassination",
         price: 69.99,
         description: "Enter the world of the ultimate assassin. HITMAN World of Assassination delivers the definitive stealth action experience, putting you in the shoes of Agent 47, a master assassin. Explore immersive locations, uncover hidden secrets, and eliminate targets with complete freedom of approach.",
-        image: "hitman.png",
+        image: "images/hitman.png",
         category: "video-game"
     }
 ];
