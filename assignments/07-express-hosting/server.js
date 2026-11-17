@@ -1,18 +1,39 @@
 //Importing Express.js framework into the file
 import express from 'express';
 
-//Initializing a new Express application into a variable
+
+
+
+
+//Creating a new Express application and storing it in a variable
 const app = express();
-//Render tells the server to use an assigned PORT variable or port 3000 to listen on
+
+//Creating a variable that stores the server's port, using the PORT environment variable or 3000 
 const port = process.env.PORT || 3000;
 
-//Express application publicly serves the static files stored in "public"
+//Creating a variable that stores current date and time
+const now = new Date();
+
+
+
+
+
+//Express application publicly serves the static files stored in "public" folder
 app.use(express.static("public"));
 
-//Express application listens for when user visits the url '/about' and sends the message back to the browser
+//Express application listens for visits to the url '/about' and sends the message back to the browser
 app.get('/about', (req, res) => {
-  res.send('The goal of this assignment is to serve a previous assignment on our own Express server on Render. I chose to use assignment 5: inventory tool.');
-})
+  res.send("The goal of this assignment is to serve a previous assignment on our own Express server on Render. I chose to use assignment 5: inventory tool.");
+});
+
+//Express application listens for visits to the url '/time' and sends the server's current time to the browser
+app.get('/time', (req, res) => {
+  res.send("The server's time is " + now.toString());
+});
+
+
+
+
 
 //Starts the server and listens for requests on the PORT or 3000
 app.listen(port);
